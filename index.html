@@ -12,6 +12,15 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+
+    @media print {
+      body {
+        background: white;
+      }
+      section {
+        margin-bottom: 24px;
+      }
+    }
   </style>
 </head>
 
@@ -20,24 +29,19 @@
 
     <!-- Header -->
     <header class="border-b pb-6 mb-6 flex flex-col md:flex-row md:justify-between md:items-start">
-  
-  <!-- Left: Name & Role -->
-  <div>
-    <h1 class="text-3xl font-bold">M Mathivanan</h1>
-    <p class="text-lg text-gray-600">Senior Software Engineer</p>
-  </div>
+      <div>
+        <h1 class="text-3xl font-bold">M Mathivanan</h1>
+        <p class="text-lg text-gray-600">Senior Software Engineer</p>
+      </div>
 
-  <!-- Right: Contact Info -->
-  <div class="mt-4 md:mt-0 text-md font-bold text-gray-700 text-left md:text-right space-y-1">
-    <p>Email: mathibsc20@gmail.com</p>
-    <p>Mobile: +91 96776 46565</p>
-  </div>
-
-</header>
-
+      <div class="mt-4 md:mt-0 text-md font-bold text-gray-700 text-left md:text-right space-y-1">
+        <p>Email: mathibsc20@gmail.com</p>
+        <p>Mobile: +91 96776 46565</p>
+      </div>
+    </header>
 
     <!-- Professional Summary -->
-    <section class="mb-8">
+    <section class="pb-10">
       <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-3">
         Professional Summary
       </h2>
@@ -49,54 +53,56 @@
     </section>
 
     <!-- Skills -->
-    <section class="mb-8">
+    <section class="pb-10">
       <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-4">
         Technical Skills
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
-          <h3 class="font-semibold mb-2">Frontend</h3>
+          <h3 class="font-semibold mb-1">Frontend</h3>
           <p class="text-sm">
-             <span class="font-semibold">Next.js, ReactJS, JavaScript, TypeScript,Tailwind CSS, </span>HTML5, CSS3, Redux, Bootstrap
-          </p>
-        </div>
-
-                <div>
-          <h3 class="font-semibold mb-2">Backend</h3>
-          <p class="text-sm">PHP, WordPress, NodeJs</p>
-        </div>
-
-        <div>
-          <h3 class="font-semibold mb-2">Tools</h3>
-          <p class="text-sm">
-GitHub, SonarQube, ESLint, Jest, React Testing Library, Figma, Sketch
+            <strong>Next.js, ReactJS, JavaScript, TypeScript, Tailwind CSS</strong>,
+            HTML5, CSS3, Redux, Bootstrap
           </p>
         </div>
 
         <div>
-          <h3 class="font-semibold mb-2">Database</h3>
+          <h3 class="font-semibold mb-1">Backend</h3>
+          <p class="text-sm">PHP, WordPress, Node.js</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-1">Tools</h3>
+          <p class="text-sm">
+            GitHub, SonarQube, ESLint, Jest, React Testing Library, Figma, Sketch
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-1">Database</h3>
           <p class="text-sm">MySQL, MongoDB</p>
         </div>
 
         <div>
-          <h3 class="font-semibold mb-2">Cloud</h3>
+          <h3 class="font-semibold mb-1">Cloud</h3>
           <p class="text-sm">AWS, EC2</p>
         </div>
-                <div>
-          <h3 class="font-semibold mb-2">OS</h3>
+
+        <div>
+          <h3 class="font-semibold mb-1">OS</h3>
           <p class="text-sm">Windows, macOS, Linux</p>
         </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section class="mb-8">
+    <section class="pb-10">
       <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-4">
         Professional Experience
       </h2>
 
-      <ul class="space-y-3 text-sm">
+      <ul class="space-y-2 text-sm">
         <li><strong>Senior Software Engineer</strong> – Gemsource Consultancy, Chennai (Sep 2025 – Nov 2025)</li>
         <li><strong>Senior Software Engineer</strong> – Sureminds Solutions, Chennai (Nov 2024 – Aug 2025)</li>
         <li><strong>Engineer Technology</strong> – Vertical Marketing Pvt Ltd, Coimbatore (Apr 2021 – Nov 2023)</li>
@@ -109,115 +115,112 @@ GitHub, SonarQube, ESLint, Jest, React Testing Library, Figma, Sketch
     </section>
 
     <!-- Projects -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-4">
+    <section>
+      <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-6">
         Key Projects
       </h2>
 
-      <div class="space-y-5 text-sm">
-        <div>
-          <h3 class="font-semibold">Enterprise Data Portal (Walmart)</h3>
-           <p><strong>Description:</strong></p>
-        <p>
-          Designed and implemented an Insight Dashboard to visualize and analyze duplicate table data
-          sourced from Bigtable and Azure. The system identifies potential duplicate tables along with
-          their corresponding target source and target tables, providing simplified and actionable
-          insights for stakeholders.
-        </p>
+      <div class="space-y-10 text-sm">
 
-        <p class="mt-2"><strong>Responsibilities:</strong></p>
-        <ul class="list-disc pl-5">
-          <li>Filtered and processed data from Database to identify duplicate tables.</li>
-          <li>Developed a client-friendly Insight Dashboard with interactive graphs and charts.</li>
-          <li>Built visual components for duplicate table trends and storage usage metrics.</li>
-          <li>Ensured simplified and clear data presentation for business stakeholders.</li>
-          <li>Improved code quality by increasing unit test coverage using Jest and React Testing Library.</li>
-          <li>Resolved SonarQube issues by reducing cognitive complexity and code smells.</li>
-          <li>Removed redundant code to improve performance and maintainability.</li>
-        </ul>
-        </div>
+        <!-- Project 1 -->
+        <div class="space-y-3">
+          <h3 class="font-semibold text-base">Enterprise Data Portal (Walmart)</h3>
 
-        <div>
-          <h3 class="font-semibold">Code Audit Project (Emerson)</h3>
-          <p>
-            Conducted manual and automated code audits using ESLint and SonarQube.
-            Created custom ESLint rules and delivered detailed audit reports with severity classification.
+          <p class="font-semibold">Description:</p>
+          <p class="leading-relaxed">
+            Designed and implemented an Insight Dashboard to visualize and analyze duplicate table
+            data sourced from Bigtable and Azure. The system identifies potential duplicate tables
+            along with their corresponding target source and target tables.
           </p>
-          <p><strong>Description:</strong></p>
-        <p>
-          Conducted a comprehensive code audit to ensure code quality, security, performance,
-          and compliance with best practices using manual reviews, ESLint, and SonarQube.
-        </p>
 
-        <p class="mt-2"><strong>Responsibilities:</strong></p>
-        <ul class="list-disc pl-5">
-          <li>Performed manual code reviews to identify logical and security issues.</li>
-          <li>Executed automated code analysis using ESLint.</li>
-          <li>Designed and implemented custom ESLint rules.</li>
-          <li>Used SonarQube to track bugs, vulnerabilities, and maintainability issues.</li>
-          <li>Generated audit reports categorized by severity and issue type.</li>
-          <li>Provided actionable recommendations and supported remediation planning.</li>
-        </ul>
+          <p class="font-semibold mt-4">Responsibilities:</p>
+          <ul class="list-disc pl-6 space-y-1 leading-relaxed">
+            <li>Filtered and processed data from databases to identify duplicate tables.</li>
+            <li>Developed an Insight Dashboard using interactive graphs and charts.</li>
+            <li>Built visual components for duplicate table trends and storage usage metrics.</li>
+            <li>Ensured simplified data presentation for stakeholders.</li>
+            <li>Increased unit test coverage using Jest and React Testing Library.</li>
+            <li>Resolved SonarQube issues and reduced cognitive complexity.</li>
+            <li>Removed redundant code to improve performance and maintainability.</li>
+          </ul>
         </div>
 
-        <div>
-          <h3 class="font-semibold">Blog Application </h3>
-          <p>
-            Built reusable UI components, implemented routing and state management,
-            and ensured maintainable, scalable frontend architecture.
+        <!-- Project 2 -->
+        <div class="space-y-3">
+          <h3 class="font-semibold text-base">Code Audit Project (Emerson)</h3>
+
+          <p class="font-semibold">Description:</p>
+          <p class="leading-relaxed">
+            Performed a comprehensive code audit to ensure quality, security, performance,
+            and compliance with best practices using ESLint and SonarQube.
           </p>
-          <p><strong>Description:</strong></p>
-        <p>
-          Developed a dynamic blog platform enabling users to create, manage, and share blog content.
-        </p>
 
-        <ul class="list-disc pl-5">
-          <li>Built application structure using HTML5, JavaScript, and Next.js.</li>
-          <li>Created reusable and maintainable UI components.</li>
-          <li>Implemented routing and state management using Redux / Context API.</li>
-          <li>Used Bootstrap templates for UI components.</li>
-          <li>Resolved SonarQube issues and improved code quality.</li>
-        </ul>
+          <p class="font-semibold mt-4">Responsibilities:</p>
+          <ul class="list-disc pl-6 space-y-1 leading-relaxed">
+            <li>Conducted manual code reviews to identify logical and security issues.</li>
+            <li>Executed automated code analysis using ESLint.</li>
+            <li>Created custom ESLint rules.</li>
+            <li>Analyzed SonarQube metrics for bugs and vulnerabilities.</li>
+            <li>Generated severity-based audit reports.</li>
+            <li>Provided actionable recommendations and remediation support.</li>
+          </ul>
         </div>
 
-        <div>
-          <h3 class="font-semibold">Travel Application</h3>
-          <p>
-            Developed responsive UI with search filters, maps, media galleries,
-            and API integrations for travel data.
+        <!-- Project 3 -->
+        <div class="space-y-3">
+          <h3 class="font-semibold text-base">Blog Application</h3>
+
+          <p class="font-semibold">Description:</p>
+          <p class="leading-relaxed">
+            Developed a dynamic blog platform using Next.js to manage and share content.
           </p>
-          <p><strong>Description:</strong></p>
-        <p>
-          Developed a travel platform with advanced search, maps, and media-rich UI for destination discovery.
-        </p>
 
-        <ul class="list-disc pl-5">
-          <li>Built application using HTML5 and JavaScript.</li>
-          <li>Designed responsive CSS templates for all pages.</li>
-          <li>Created reusable UI components for search, maps, and booking.</li>
-          <li>Ensured cross-device responsiveness.</li>
-          <li>Integrated APIs for travel data and booking.</li>
-          <li>Resolved SonarQube issues and improved maintainability.</li>
-        </ul>
+          <ul class="list-disc pl-6 space-y-1 leading-relaxed">
+            <li>Built application structure using HTML5, JavaScript, and Next.js.</li>
+            <li>Created reusable UI components.</li>
+            <li>Implemented routing and state management.</li>
+            <li>Used Bootstrap for UI components.</li>
+            <li>Resolved SonarQube issues.</li>
+          </ul>
         </div>
 
-        <div>
-          <h3 class="font-semibold">E-commerce WordPress Projects</h3>
-          <p>
-            Developed responsive WooCommerce websites (Thefaystore, Vogt Stockholm),
-            including custom themes, plugins, and payment integration.
+        <!-- Project 4 -->
+        <div class="space-y-3">
+          <h3 class="font-semibold text-base">Travel Application</h3>
+
+          <p class="font-semibold">Description:</p>
+          <p class="leading-relaxed">
+            Developed a travel platform with advanced search, maps, and media-rich UI.
           </p>
-          <p>
-          Responsive e-commerce website for personal care and stationery products.
-        </p>
-        <p><strong>Technologies:</strong> WordPress, Bootstrap, HTML5, CSS3, MySQL</p>
-        <p><strong>Responsibility:</strong> Theme development, plugin development, custom field creation.</p>
+
+          <ul class="list-disc pl-6 space-y-1 leading-relaxed">
+            <li>Built application using HTML5 and JavaScript.</li>
+            <li>Designed responsive CSS templates.</li>
+            <li>Created reusable UI components.</li>
+            <li>Ensured cross-device responsiveness.</li>
+            <li>Integrated APIs for travel data.</li>
+            <li>Resolved SonarQube issues.</li>
+          </ul>
         </div>
+
+        <!-- Project 5 -->
+        <div class="space-y-3 pb-10">
+          <h3 class="font-semibold text-base">E-commerce WordPress Projects</h3>
+
+          <p class="leading-relaxed">
+            Developed responsive WooCommerce websites (Thefaystore, Vogt Stockholm)
+            with custom themes, plugins, and payment integrations.
+          </p>
+
+          <p><strong>Technologies:</strong> WordPress, Bootstrap, HTML5, CSS3, MySQL</p>
+          <p><strong>Responsibilities:</strong> Theme development, plugin development, custom field creation.</p>
+        </div>
+
       </div>
     </section>
 
     <!-- Education -->
-    <section class="mb-8">
+    <section>
       <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-3">
         Education
       </h2>
@@ -227,8 +230,8 @@ GitHub, SonarQube, ESLint, Jest, React Testing Library, Figma, Sketch
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 border-t pt-4">
-      © 2026 M Mathivanan React Js developer
+    <footer class="text-center text-sm text-gray-500 border-t pt-4 mt-6">
+      © 2026 M Mathivanan – React JS Developer
     </footer>
 
   </div>
