@@ -13,14 +13,37 @@
       font-family: 'Inter', sans-serif;
     }
 
-    @media print {
+/*    @media print {
       body {
         background: white;
       }
       section {
         margin-bottom: 24px;
       }
-    }
+    }*/
+
+    @media print {
+  body {
+    background: white;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .shadow-lg {
+    box-shadow: none;
+  }
+
+  .rounded-lg {
+    border-radius: 0;
+  }
+
+  .my-10 {
+    margin: 0;
+  }
+}
+
   </style>
 </head>
 
@@ -37,7 +60,14 @@
       <div class="mt-4 md:mt-0 text-md font-bold text-gray-700 text-left md:text-right space-y-1">
         <p>Email: mathibsc20@gmail.com</p>
         <p>Mobile: +91 96776 46565</p>
+          <button
+    onclick="window.print()"
+    class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-black-700 print:hidden"
+  >
+    Download Resume (PDF)
+  </button>
       </div>
+
     </header>
 
     <!-- Professional Summary -->
