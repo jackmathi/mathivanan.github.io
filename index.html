@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>M Mathivanan | Senior Software Engineer</title>
+  <title>Mathivanan Marimuthu | Senior Software Engineer [ReactJS & NextJS]</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -13,256 +11,199 @@
       font-family: 'Inter', sans-serif;
     }
 
-/*    @media print {
+    @media print {
       body {
         background: white;
       }
-      section {
-        margin-bottom: 24px;
+      .print\:hidden {
+        display: none !important;
       }
-    }*/
-
-    @media print {
-  body {
-    background: white;
+      .shadow-lg {
+        box-shadow: none;
+      }
+      .rounded-lg {
+        border-radius: 0;
+      }
+      .my-10 {
+        margin: 0;
+      }
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
-  .print\:hidden {
-    display: none !important;
+  aside {
+    background-color: #928f8f !important;
+    color: white !important;
   }
-
-  .shadow-lg {
-    box-shadow: none;
-  }
-
-  .rounded-lg {
-    border-radius: 0;
-  }
-
-  .my-10 {
-    margin: 0;
-  }
-}
-
+    }
   </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-  <div class="max-w-6xl mx-auto bg-white shadow-lg my-10 p-8 rounded-lg">
+<body class="bg-gray-100 text-sm">
+  <div class="max-w-5xl mx-auto bg-white grid grid-cols-3 min-h-screen my-10 shadow-lg rounded-lg">
 
-    <!-- Header -->
-    <header class="border-b pb-6 mb-6 flex flex-col md:flex-row md:justify-between md:items-start">
-      <div>
-        <h1 class="text-3xl font-bold">M Mathivanan</h1>
-        <p class="text-lg text-gray-600">Senior Software Engineer</p>
+    <!-- LEFT SIDEBAR -->
+    <aside class="col-span-1 bg-[#928f8f] text-white p-6">
+      <h1 class="text-xl font-bold mb-1">MATHIVANAN M</h1>
+      <p class="text-gray-200 mb-6">Senior Software Engineer</p>
+
+      <!-- Contact -->
+      <div class="mb-6 leading-relaxed">
+        <h2 class="font-semibold border-b border-gray-300 mb-2">CONTACT</h2>
+        <p>📞 +91 96776 46565</p>
+        <p>📧 mathibsc20@gmail.com</p>
+        <p>📍 Chennai, India</p>
+        <p>🔗 linkedin.com/in/mathivanan-marimuthu</p>
       </div>
 
-      <div class="mt-4 md:mt-0 text-md font-bold text-gray-700 text-left md:text-right space-y-1">
-        <p>Email: mathibsc20@gmail.com</p>
-        <p>Mobile: +91 96776 46565</p>
-          <button
-    onclick="window.print()"
-    class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-black-700 print:hidden"
-  >
-    Download Resume (PDF)
-  </button>
+      <!-- Skills -->
+      <div class="mb-6 leading-relaxed">
+        <h2 class="font-semibold border-b border-gray-300 mb-2">SKILLS</h2>
+        <ul class="list-disc pl-4">
+          <li>Next.js, React.js</li>
+          <li>TypeScript, JavaScript</li>
+          <li>Redux</li>
+          <li>HTML5, CSS3, Bootstrap</li>
+          <li>PHP, WordPress</li>
+          <li>MySQL</li>
+          <li>SonarQube, ESLint</li>
+          <li>Unit Testing</li>
+        </ul>
       </div>
 
-    </header>
-
-    <!-- Professional Summary -->
-    <section class="pb-10">
-      <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-3">
-        Professional Summary
-      </h2>
-      <p class="leading-relaxed">
-        Software Developer with 8.9 years of experience in web technologies including
-        Next.js, ReactJS, Redux, JavaScript, TypeScript, HTML5, CSS3, WordPress, PHP, and MySQL.
-        Strong team player with excellent analytical, troubleshooting, and communication skills.
-      </p>
-    </section>
-
-    <!-- Skills -->
-    <section class="pb-10">
-      <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-4">
-        Technical Skills
-      </h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div>
-          <h3 class="font-semibold mb-1">Frontend</h3>
-          <p class="text-sm">
-            <strong>Next.js, ReactJS, JavaScript, TypeScript, Tailwind CSS</strong>,
-            HTML5, CSS3, Redux, Bootstrap
-          </p>
-        </div>
-
-        <div>
-          <h3 class="font-semibold mb-1">Backend</h3>
-          <p class="text-sm">PHP, WordPress, Node.js</p>
-        </div>
-
-        <div>
-          <h3 class="font-semibold mb-1">Tools</h3>
-          <p class="text-sm">
-            GitHub, SonarQube, ESLint, Jest, React Testing Library, Figma, Sketch
-          </p>
-        </div>
-
-        <div>
-          <h3 class="font-semibold mb-1">Database</h3>
-          <p class="text-sm">MySQL, MongoDB</p>
-        </div>
-
-        <div>
-          <h3 class="font-semibold mb-1">Cloud</h3>
-          <p class="text-sm">AWS, EC2</p>
-        </div>
-
-        <div>
-          <h3 class="font-semibold mb-1">OS</h3>
-          <p class="text-sm">Windows, macOS, Linux</p>
-        </div>
+      <!-- Languages -->
+      <div class="leading-relaxed">
+        <h2 class="font-semibold border-b border-gray-300 mb-2">LANGUAGES</h2>
+        <p>English – Fluent</p>
+        <p>Tamil – Native</p>
       </div>
-    </section>
 
-    <!-- Experience -->
-    <section class="pb-10">
-      <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-4">
-        Professional Experience
-      </h2>
+      <!-- Personal Details -->
+<div class="mt-6">
+  <h2 class="font-semibold border-b border-gray-300 mb-2 uppercase leading-relaxed">
+    Personal Details
+  </h2>
 
-      <ul class="space-y-2 text-sm">
-        <li><strong>Senior Software Engineer</strong> – Gemsource Consultancy, Chennai (Sep 2025 – Nov 2025)</li>
-        <li><strong>Senior Software Engineer</strong> – Sureminds Solutions, Chennai (Nov 2024 – Aug 2025)</li>
-        <li><strong>Engineer Technology</strong> – Vertical Marketing Pvt Ltd, Coimbatore (Apr 2021 – Nov 2023)</li>
-        <li><strong>Software Engineer</strong> – IKOMET Technology Solutions, Chennai (Dec 2019 – Mar 2021)</li>
-        <li><strong>Software Engineer</strong> – Made by Fire, Chennai (Jun 2018 – Oct 2019)</li>
-        <li><strong>Developer IT</strong> – Srinivas Fine Arts Pvt Ltd (Jun 2017 – May 2018)</li>
-        <li><strong>PHP Developer</strong> – Sixth Start Technologies (Mar 2015 – May 2016)</li>
-      </ul>
-    </section>
+  <p>
+    <span class="font-semibold">Father Name</span> : M. Marimuthu
+  </p>
 
-    <!-- Projects -->
-    <section>
-      <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-6">
-        Key Projects
-      </h2>
+  <p>
+    <span class="font-semibold">Date of Birth</span> : 02-01-1990
+  </p>
 
-      <div class="space-y-10 text-sm">
+  <p>
+    <span class="font-semibold">Place</span> : Rajapalayam
+  </p>
+</div>
 
-        <!-- Project 1 -->
-        <div class="space-y-3">
-          <h3 class="font-semibold text-base">Enterprise Data Portal (Walmart)</h3>
+    </aside>
 
-          <p class="font-semibold">Description:</p>
-          <p class="leading-relaxed">
-            Designed and implemented an Insight Dashboard to visualize and analyze duplicate table
-            data sourced from Bigtable and Azure. The system identifies potential duplicate tables
-            along with their corresponding target source and target tables.
-          </p>
+    <!-- RIGHT CONTENT -->
+    <main class="col-span-2 p-8">
 
-          <p class="font-semibold mt-4">Responsibilities:</p>
-          <ul class="list-disc pl-6 space-y-1 leading-relaxed">
-            <li>Filtered and processed data from databases to identify duplicate tables.</li>
-            <li>Developed an Insight Dashboard using interactive graphs and charts.</li>
-            <li>Built visual components for duplicate table trends and storage usage metrics.</li>
-            <li>Ensured simplified data presentation for stakeholders.</li>
-            <li>Increased unit test coverage using Jest and React Testing Library.</li>
-            <li>Resolved SonarQube issues and reduced cognitive complexity.</li>
-            <li>Removed redundant code to improve performance and maintainability.</li>
-          </ul>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="space-y-3">
-          <h3 class="font-semibold text-base">Code Audit Project (Emerson)</h3>
-
-          <p class="font-semibold">Description:</p>
-          <p class="leading-relaxed">
-            Performed a comprehensive code audit to ensure quality, security, performance,
-            and compliance with best practices using ESLint and SonarQube.
-          </p>
-
-          <p class="font-semibold mt-4">Responsibilities:</p>
-          <ul class="list-disc pl-6 space-y-1 leading-relaxed">
-            <li>Conducted manual code reviews to identify logical and security issues.</li>
-            <li>Executed automated code analysis using ESLint.</li>
-            <li>Created custom ESLint rules.</li>
-            <li>Analyzed SonarQube metrics for bugs and vulnerabilities.</li>
-            <li>Generated severity-based audit reports.</li>
-            <li>Provided actionable recommendations and remediation support.</li>
-          </ul>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="space-y-3">
-          <h3 class="font-semibold text-base">Blog Application</h3>
-
-          <p class="font-semibold">Description:</p>
-          <p class="leading-relaxed">
-            Developed a dynamic blog platform using Next.js to manage and share content.
-          </p>
-
-          <ul class="list-disc pl-6 space-y-1 leading-relaxed">
-            <li>Built application structure using HTML5, JavaScript, and Next.js.</li>
-            <li>Created reusable UI components.</li>
-            <li>Implemented routing and state management.</li>
-            <li>Used Bootstrap for UI components.</li>
-            <li>Resolved SonarQube issues.</li>
-          </ul>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="space-y-3">
-          <h3 class="font-semibold text-base">Travel Application</h3>
-
-          <p class="font-semibold">Description:</p>
-          <p class="leading-relaxed">
-            Developed a travel platform with advanced search, maps, and media-rich UI.
-          </p>
-
-          <ul class="list-disc pl-6 space-y-1 leading-relaxed">
-            <li>Built application using HTML5 and JavaScript.</li>
-            <li>Designed responsive CSS templates.</li>
-            <li>Created reusable UI components.</li>
-            <li>Ensured cross-device responsiveness.</li>
-            <li>Integrated APIs for travel data.</li>
-            <li>Resolved SonarQube issues.</li>
-          </ul>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="space-y-3 pb-10">
-          <h3 class="font-semibold text-base">E-commerce WordPress Projects</h3>
-
-          <p class="leading-relaxed">
-            Developed responsive WooCommerce websites (Thefaystore, Vogt Stockholm)
-            with custom themes, plugins, and payment integrations.
-          </p>
-
-          <p><strong>Technologies:</strong> WordPress, Bootstrap, HTML5, CSS3, MySQL</p>
-          <p><strong>Responsibilities:</strong> Theme development, plugin development, custom field creation.</p>
-        </div>
-
+      <!-- Download Button -->
+      <div class="flex justify-end mb-4 print:hidden">
+        <button onclick="window.print()" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+          Download Resume (PDF)
+        </button>
       </div>
-    </section>
 
-    <!-- Education -->
-    <section>
-      <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-3 mb-3">
-        Education
-      </h2>
-      <p class="text-sm">
-        B.Sc (Computer Science) – NMS SVN College, Madurai (Kamaraj University)
-      </p>
-    </section>
+      <!-- Profile -->
+      <section class="mb-6 leading-relaxed">
+        <h2 class="font-bold border-b mb-2">PROFILE</h2>
+        <p>
+          Software Developer with 8.9 years of experience in web application development.
+          Expertise in <span class="font-bold"> Next.js, ReactJS, Redux, JavaScript,TypeScript, Jest, SonarQube, MangoDB, Github. </span>
+          Strong background in PHP, MySQL, and WordPress with proven ability to deliver
+          scalable and maintainable applications.
+        </p>
+      </section>
 
-    <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 border-t pt-4 mt-6">
-      © 2026 M Mathivanan – React JS Developer
-    </footer>
+      <!-- Experience -->
+      <section class="mb-6">
+        <h2 class="font-bold border-b mb-2">WORK EXPERIENCE</h2>
 
+        <p class="font-semibold">Senior Software Engineer – Gemsource Consultancy, Chennai</p>
+        <p class="text-xs italic mb-2">2025 – Present</p>
+
+        <p class="font-semibold">Senior Software Engineer – Sureminds Solutions, Chennai</p>
+        <p class="text-xs italic mb-2">2024 – 2025</p>
+
+        <p class="font-semibold">Engineer Technology – Vertical Marketing Pvt Ltd, Chennai</p>
+        <p class="text-xs italic mb-2">2021 – 2023</p>
+
+        <p class="font-semibold">Software Engineer – IKOMET Technology Solutions Pvt Ltd, Chennai</p>
+        <p class="text-xs italic mb-2">Dec 2019 – Mar 2021</p>
+
+        <p class="font-semibold">Software Engineer – Made by Fire, Chennai</p>
+        <p class="text-xs italic mb-2">Jun 2018 – Oct 2019</p>
+
+        <p class="font-semibold">Developer IT – Srinivas Fine Arts Pvt Ltd, Chennai</p>
+        <p class="text-xs italic mb-2">Jun 2017 – May 2018</p>
+
+        <p class="font-semibold">PHP Developer – Sixth Start Technologies, Chennai</p>
+        <p class="text-xs italic">Mar 2015 – May 2016</p>
+      </section>
+
+      <!-- Projects -->
+      <section class="mb-6 leading-relaxed">
+        <h2 class="font-bold border-b mb-2">KEY PROJECTS</h2>
+
+        <p class="font-semibold">1. Enterprise Data Portal (Walmart – Next.js)</p>
+        <p class="mb-2 leading-relaxed">
+          Designed and implemented an Insight Dashboard to analyze duplicate table data from
+          Bigtable and Azure, presenting simplified and actionable insights.
+        </p>
+        <ul class="list-disc pl-5 mb-4 ">
+          <li>Filtered and processed Bigtable and Azure data.</li>
+          <li>Built interactive dashboards with charts and metrics.</li>
+          <li>Improved unit test coverage using Jest and RTL.</li>
+          <li>Resolved SonarQube issues and reduced cognitive complexity.</li>
+        </ul>
+
+        <p class="font-semibold">2. Code Audit Project (Emerson)</p>
+        <p class="mb-2">
+          Conducted comprehensive code audits using ESLint and SonarQube to identify
+          bugs, vulnerabilities, and maintainability issues.
+        </p>
+        <ul class="list-disc pl-5 mb-4">
+          <li>Performed manual and automated code reviews.</li>
+          <li>Designed custom ESLint rules.</li>
+          <li>Generated severity-based audit reports.</li>
+        </ul>
+
+        <p class="font-semibold">3. Blog Application (Next.js)</p>
+        <ul class="list-disc pl-5 mb-4">
+          <li>Developed reusable components and routing.</li>
+          <li>Managed state using Redux / Context API.</li>
+          <li>Improved code quality via SonarQube fixes.</li>
+        </ul>
+
+        <p class="font-semibold">4. Travel Application</p>
+        <ul class="list-disc pl-5 mb-4">
+          <li>Implemented advanced search and responsive UI.</li>
+          <li>Integrated APIs for travel data.</li>
+          <li>Ensured cross-device compatibility.</li>
+        </ul>
+
+        <p class="font-semibold">5. Thefaystore (WordPress)</p>
+        <p>Technologies: WordPress, Bootstrap, HTML5, CSS3, MySQL</p>
+        <p class="mb-3">Theme & plugin development, custom fields.</p>
+
+        <p class="font-semibold">6. Vogt Stockholm (WordPress)</p>
+        <p>Multi-currency WooCommerce website with Stripe integration.</p>
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h2 class="font-bold border-b mb-2">EDUCATION</h2>
+        <p>B.Sc (Computer Science)</p>
+        <p>NMS SVN College – Madurai Kamaraj University</p>
+      </section>
+
+    </main>
   </div>
 </body>
 </html>
